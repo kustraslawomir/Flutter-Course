@@ -18,11 +18,15 @@ class MyApp extends StatelessWidget {
             Text('widget 2'),
             RaisedButton(
               child: Text('buttonek'),
-              onPressed: null,
+              onPressed: buttonPressed,
             )
           ],
         ),
       ),
     );
+  }
+
+  void buttonPressed(){
+    print("Button pressed");
   }
 }
